@@ -1,0 +1,23 @@
+pv <- function(num, A, i, t, m = TRUE)
+  switch(num, 
+         bungatunggal = {
+           k = A/(1+i*t)
+           print(k)
+         },
+         bungamajemuk = {
+           km = A*(1+i/m)^(-m*t)
+           print(km)
+         },
+         bungakontinu = {
+           kk = A*exp(-i*t)
+           print(kk)
+         }
+  )
+#A = nilai akumulasi
+#i = bunga
+#t = tahun
+#m = per tiga bulan
+##pilihan (num)##
+#1 = bunga tunggal
+#2 = bunga majemuk
+#3 = bunga kontinu
