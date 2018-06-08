@@ -1,0 +1,22 @@
+annuitasmajemuk1 <- function(num, i, t, An = TRUE, Sn = TRUE, m = TRUE)
+{
+  j=i/m 
+n=m*t 
+v= 1/(1+j)
+}
+  switch(num,  
+         satu = { 
+           cat("Nilai v:", v,"\n") 
+           k_An = An/((1+v)^n/j) 
+           cat ("Nilai k dari annuitas akhir sebesar :", k_An,"\n") 
+           k_Sn = Sn/(((1+j)^n)-1)/j
+           cat("Nilai k dari annuitas akhir sebesar :",k_Sn,"\n") 
+         }, 
+         dua = { 
+           cat("Nilai v:", v,"\n") 
+           k_Anawal = An/(1-v^n)/(j*v)
+           cat ("Nilai k  dari annuitas awal sebesar :", k_Anawal,"\n") 
+           k_Snawal = Sn/(((1+j)^n)-1)/(j*v) 
+           cat("Nilai k dari annuitas awal sebesar :",k_Snawal,"\n") 
+         } 
+  )
