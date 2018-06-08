@@ -1,0 +1,17 @@
+annuitas <- function(num,i,k,n)
+  switch(num, 
+         satu = {
+           v=1/(1+i)
+           pvakhir = k*((1-v^n)/i)
+           snakhir = k*((((1+i)^n)-1)/i)
+           print(pvakhir)
+           print(snakhir)
+         },
+         dua = {
+           v=1/(1+i)
+           pvawal = k*((1-v^n)/(i*v))
+           snawal = k*((((1+i)^n)-1)/(i*v))
+           print(pvawal)
+           print(snawal)
+         }
+  )
