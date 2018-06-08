@@ -1,0 +1,10 @@
+Obligasi2<- function (f,r,i,t,m) {
+  n=t*m
+  rbin=r/m
+  ibin=i/m
+  vbin=1/(1+ibin)
+  an=1-(vbin^n)/ibin
+  P<-f*rbin*((1-(vbin^n))/ibin) + f*(vbin^n)
+  return(P)
+  
+}
