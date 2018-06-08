@@ -1,0 +1,25 @@
+# pengantar-statistika-keuangan
+pilihbunga <- function(num, A, k, t, m =TRUE)
+  switch(num, 
+         bungatunggal = {
+           i = (A/k-1)/t
+           print(i)
+         },
+         bungamajemuk = {
+           im = ((A/k)^(1/(m*t))-1)* m
+           print(im)
+         },
+         bungakontinu = {
+           ik = log(A/k)/t
+           print(ik)
+         }
+  )
+#A = nilai akumulasi
+#k = modal
+#i = bunga
+#t = tahun
+#m = per tiga bulan
+##pilihan (num)##
+#1= bunga tunggal
+#2 = bunga majemuk
+#3 = bunga kontinu
